@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>The Pointless Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-box">
+            <div class="left">
+               <div class="nav-link-wrap">
+                    <a href="thepointlesssite.html">Home</a>
+                </div>
+                <div class="nav-link-wrap">
+                    <a href="Button.html">The Pointless Button</a>
+                </div>
+                <div class="nav-link-wrap">
+                    <a href="lever.html">The Pointless Lever</a>
+                </div>
+            </div>
+                
+            <div class="right">
+                <div class="brand">
+                    <div>The Pointless Site</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-wrap">
+            <div class="images-wrap">
+
+                <div class="image-wrap">
+                    <div class="image-background" style="background-image: url(images/butotn.jpeg);"></div>
+
+                    <div class="img-text-wrap">
+                        <div class="logo-wrap">
+                                <img src= "images/butotn.jpeg">
+                        </div>
+                        
+                        <div class="subtitle-wrap">
+                            <a href="Button.html">Click here for the pointless button!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image-wrap">
+                    <div class="image-background" style="background-image: url(images/8bf160c8442d5e2e871f2cb794bb062c.jpeg);"></div>
+
+                    <div class="img-text-wrap">
+                        <div class="logo-wrap">
+                            <img src= "images/8bf160c8442d5e2e871f2cb794bb062c.jpeg">
+                        </div>
+                        
+                        <div class="subtitle-wrap">
+                            <a href="lever.html">Click here for the pointless lever!</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    
+</div>
+<script>
+    const images = document.querySelectorAll('.image-wrap')
+    images.forEach(image => {
+        image.addEventListener('mouseover', () => {
+            image.classList.add('img-darken');
+        })
+      
+        image.addEventListener('mouseout', () => {
+            image.classList.remove('img-darken');
+        })
+    })
+</script>
+</body>
+</html>
